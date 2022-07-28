@@ -64,9 +64,9 @@
 //
 // for (let i = 0; i < 10; i++) {
 //   arrOdd[i] = len;
-//  len += 2;
-//  }
-//  console.log(arrOdd);
+//   len += 2;
+// }
+// console.log(arrOdd);
 
 
 // 6. с помощью цикла создать массив, каждый элемент которого равен
@@ -136,8 +136,9 @@
 // выведите на экран наибольший ЧЕТНЫЙ элемент массива
 
 // let maxValue = 0;
-//
+
 // const arrRandom = [1, 23, 10, 44, 56, 13, 18, 22, 5, 80];
+// const arrRandom = [0, 0, 0, 0];
 //
 // for (let i = 0; i < arrRandom.length; i++) {
 //   const isEven = arrRandom[i] % 2 === 0;
@@ -146,41 +147,41 @@
 //     maxValue = arrRandom[i];
 //   }
 // }
-//
-// console.log(maxValue);
+
+// console.log(maxValue || "В массиве нет положительных чисел");
 
 // 11. дан массив из 10 случайных чисел (НЕ ПОСЛЕДОВАТЕЛЬНЫХ)
 // пользователь вводит число n, вывести в консоль элемент массива
 // который наиболее близок к n (если таких элементов несколько, вывести несколько)
 
-const arrRandom = [1, -23, -10, 13, 13, 12, 18, 22, 5, 80];
-let values = [];
-let minDifference = 0;
-
-let userValue = +prompt("Enter your number");
-
-if (isNaN(userValue)) {
-  alert("This is not number");
-  userValue = +prompt("Enter your number");
-};
-
-for (let i = 0; i < arrRandom.length; i++) {
-  const curentDifference = Math.abs(userValue - arrRandom[i]);
-
-  if (i === 0) {
-    values.push(arrRandom[i]);
-    minDifference = curentDifference;
-    continue;
-  };
-
-  if (minDifference > curentDifference) {
-    minDifference = curentDifference;
-    values.splice(0, values.length, arrRandom[i]);
-    continue;
-  }
-
-  if (minDifference === curentDifference) {
-    values.push(arrRandom[i]);
-    continue;
-  }
-};
+// const arrRandom = [1, -23, -10, 13, 13, 12, 18, 22, 5, 80];
+// let values = [];
+// let minDifference = 0;
+//
+// let userValue = +prompt("Enter your number");
+//
+// if (isNaN(userValue)) {
+//   alert("This is not number");
+//   userValue = +prompt("Enter your number");
+// };
+//
+// for (let i = 0; i < arrRandom.length; i++) {
+//   const curentDifference = Math.abs(userValue - arrRandom[i]);
+//
+//   if (i === 0) {
+//     values.push(arrRandom[i]);
+//     minDifference = curentDifference;
+//     continue;
+//   };
+//
+//   if (minDifference > curentDifference) {
+//     minDifference = curentDifference;
+//     values.splice(0, values.length, arrRandom[i]);
+//     continue;
+//   }
+//
+//   if (minDifference === curentDifference) {
+//     values.push(arrRandom[i]);
+//     continue;
+//   }
+// };

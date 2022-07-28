@@ -43,11 +43,15 @@
 // for (;enterNumber;) {
 //   const formatNumber = +enterNumber;
 //   enterNumber = prompt('Please enter a number');
-//   formatNumber > 0
-//     ? ++positiveCount
-//     : formatNumber < 0
-//       ? ++negativeCount
-//       : ++zeroCount
+//   if (formatNumber > 0) {
+//     ++positiveCount;
+//     continue;
+//   }
+//   if (formatNumber < 0) {
+//     ++negativeCount;
+//     continue;
+//   }
+//   ++zeroCount;
 // }
 //
 // console.log("Negative count ==>>", negativeCount);
@@ -73,9 +77,9 @@
 // 5. Пользователь вводит числа n и m, вывести в консоль
 // квадраты всех чисел от n до m
 //
-let nNumber = +prompt('Please enter a number');
-let mNumber = +prompt('Please enter a number');
-
-for (let i = nNumber; i <= mNumber; i++) {
-  console.log(i**2);
-}
+// let nNumber = +prompt('Please enter a number');
+// let mNumber = +prompt('Please enter a number');
+//
+// for (let i = nNumber; i <= mNumber; i++) {
+//   console.log(i**2);
+// }
